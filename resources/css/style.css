@@ -1,20 +1,32 @@
-.header {
+header, div {
   display: flex;
-  width: 100%
-  min-width: 500px
-
+  width: 100%;
+  min-width: 900px;
+  height: 100px;
+  align-items: center;
+  flex-grow: 2;
+  flex-shrink: 3;
 }
 
-#logo, #logoright {
-  flex-direction: row;
+header {
+  border-bottom-style: solid;
+  border-bottom: 3;
 }
 
-#logoright {
-  color: hsl(160, 51%, 60%);
-  background-color: inherit;
+.logo{
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+span {
+  margin-left: 30px;
 }
 
 .headnav {
-  display: inline-block;
-  align-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  flex-flow: nowrap;
+  width: 350px;
+  margin-right: 30px;
 }
