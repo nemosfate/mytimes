@@ -34,6 +34,26 @@ header {
   margin-right: 30px;
 }
 
+.boldtext {
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  min-width: 200px;
+  width: 630px;
+  height: 90%;
+  margin-top: 30px;
+  align-items: center;
+  border: 5px dotted red;
+}
+
+#phish, #monument, #earth, #breakfast, #research, #orca, .boldtext {
+  border: 5px dotted hsl(160, 51%, 60%);
+}
+/* sizes for columns below COMMENT ONLY DO NOT USE CODE BELOW
+
 .column.large {
   width: 630px;
 }
@@ -45,7 +65,4 @@ header {
 .column.small {
   width: 240px;
 }
-
-.boldtext {
-  font-weight: bold;
-}
+*/
