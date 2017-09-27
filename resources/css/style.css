@@ -36,7 +36,8 @@ header {
 
 .boldtext {
   font-weight: bold;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 main {
@@ -53,8 +54,8 @@ main {
 }
 
 /*main large column left */
-#monument, #earth, #breakfast, #research, #orca {
-  display: flex;
+#monument, #breakfast, #orca {
+  display: block;
   border: 1px solid hsl(160, 51%, 60%);
   font-family: Georgia;
   font-size: 17px;
@@ -71,8 +72,6 @@ main {
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
-  color: white;
-}
 }
 
 #earth {
@@ -167,4 +166,5 @@ main {
   font-weight: bold;
   font-size: 30px;
   color: white;
+  border: 1px solid hsl(160, 51%, 60%);
 }
