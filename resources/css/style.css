@@ -53,7 +53,8 @@ main {
 }
 
 /*main large column left */
-#phishimg, #monument, #earth, #breakfast, #research, #orca {
+#monument, #earth, #breakfast, #research, #orca {
+  display: flex;
   border: 1px solid hsl(160, 51%, 60%);
   font-family: Georgia;
   font-size: 17px;
@@ -61,11 +62,11 @@ main {
 }
 
 #phish {
-    border: 1px solid hsl(160, 51%, 60%);
-  align-items: center;
+  display: flex;
+  border: 1px solid hsl(160, 51%, 60%);
   text-align: left;
   color: white;
-  background-image: url("./resources/images/img-story-main.png");
+  background-image: url("../images/img-story-main.png");
   font-size: 40px;
   font-family: Georgia;
   font-weight: bold;
@@ -75,16 +76,15 @@ main {
 }
 
 #earth {
-  align-items: center;
   text-align: center;
   color: white;
-  background-image: url("./resources/images/img-story-2.png");
+  background-image: url("../images/img-story-2.png");
 }
 
 #research {
   text-align: center;
   color: white;
-  background-image: url("./resources/images/img-story-3.png");
+  background-image: url("../images/img-story-3.png");
 }
 
 #phish, #earth, #research {
@@ -109,7 +109,7 @@ main {
 #cats {
   text-align: center;
   color: white;
-  background-image: url("./resources/images/img-story-1.png");
+  background-image: url("../images/img-story-1.png");
   min-height: 300px;
   min-width: 300px;
 }
