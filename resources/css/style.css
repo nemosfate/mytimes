@@ -14,6 +14,9 @@ header, #logo {
 header {
   border-bottom-style: solid;
   border-bottom: 3;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
 }
 
 #logo{
@@ -29,7 +32,7 @@ header {
 .headnav {
   align-items: center;
   justify-content: flex-end;
-  flex-flow: nowrap;
+  flex-wrap: nowrap;
   min-width: 350px;
   margin-right: 30px;
 }
@@ -39,24 +42,47 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
 }
-
+/* Main Container */
 main {
   display: flex;
   min-width: 200px;
   width: 100%;
-  height: 90%;
   padding-top: 30px;
   margin: 0px auto 80px auto;
-  border: 2px solid red;
   justify-content: center;
   position: relative;
+}
+
+.columnsmall, .columnmed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+
+.story{
+  display: flex;
   flex-wrap: wrap;
+}
+
+#cats, #research, #earth {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
 }
 
 /*main large column left */
 #monument, #breakfast, #orca {
   display: block;
-  border: 1px solid hsl(160, 51%, 60%);
   font-family: Georgia;
   font-size: 17px;
   color: black;
@@ -64,41 +90,54 @@ main {
 
 #phish {
   display: flex;
-  border: 1px solid hsl(160, 51%, 60%);
   text-align: left;
   color: white;
+  width: 630px;
+  height: 300px;
   background-image: url("../images/img-story-main.png");
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
   font-size: 40px;
   font-family: Georgia;
   font-weight: bold;
-  font-size: 40px;
 }
 
 #earth {
   text-align: center;
   color: white;
   background-image: url("../images/img-story-2.png");
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
 }
 
 #research {
   text-align: center;
   color: white;
   background-image: url("../images/img-story-3.png");
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
 }
 
-#phish, #earth, #research {
-  width: 630px;
+#earth, #research,#orca, #breakfast {
+  width: 300px;
   height: 300px;
 }
 
 .columnlarge {
   display: flex;
-  border: 2px solid hsl(340, 51%, 60%);
   width: 630px;
   height: 100%;
   flex-grow: 2;
   flex-shrink: 2;
-  flex-direction: column;
+  flex-flow: column wrap;
   margin-right: 30px;
   justify-content: flex-start;
 }
@@ -107,15 +146,18 @@ main {
 
 #cats {
   text-align: center;
-  color: white;
   background-image: url("../images/img-story-1.png");
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
   min-height: 300px;
   min-width: 300px;
 }
 
 .columnmed {
   display: flex;
-  border: 2px solid hsl(160, 75%, 36%);
   width: 300px;
   height: 100%;
   flex-grow: 3;
@@ -125,17 +167,14 @@ main {
   justify-content: flex-start;
 }
 
-#cats, #brooklyn {
-  border: 1px solid hsl(160, 51%, 60%);
+#brooklyn {
   font-family: Georgia;
   font-size: 17px;
-  color: black;
 }
 
 /*main small column right*/
 .columnsmall {
   display: flex;
-  border: 2px solid hsl(340, 75%, 36%);
   width: 240px;
   height: 100%;
   flex-grow: 3;
@@ -146,25 +185,60 @@ main {
 }
 
 #newsbites {
-  border: 2px solid hsl(160, 75%, 36%);
+  display: flex;
+  flex-flow: column nowrap;
   font-family: Georgia;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: bold;
   color: black;
-
+  text-align: center;
 }
 
-/* flex */
+.smallbites {
+  text-align: left;
+  font-size: 12px;
+  color: DimGray;
+  background-color: whitesmoke;
+  font-family: Verdana;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+}
 
-.columnsmall, .columnmed, .columnlarge {
+
+/*Footer*/
+footer {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  min-width: 200px;
+  height: 100px;
+  align-items: center;
+  flex-grow: 2;
+  flex-shrink: 3;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom-style: solid;
+  border-bottom: 3;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+.nav {
+  margin-left: 30px;
+  align-items: center;
   justify-content: center;
 }
 
-#cats, #research, #earth {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
+.footnav {
+  align-content:flex-end;
+  justify-content: flex-start;
+  flex-wrap: row nowrap;
+  min-width: 350px;
+  margin-right: 30px;
+}
+
+#mtfooter {
   color: white;
-  border: 1px solid hsl(160, 51%, 60%);
+
 }
